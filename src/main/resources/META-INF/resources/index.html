@@ -53,6 +53,13 @@
       .btn-primary:hover {
         background-color: #800080;
       }
+      @media (min-width: 992px) {
+        .navbar-center-absolute {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
     </style>
   </head>
   <body>
@@ -73,10 +80,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-center"
+          class="collapse navbar-collapse"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-center-absolute text-center">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
                 >메인화면</a
@@ -89,7 +96,7 @@
               <a class="nav-link" href="#">챔피온</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">다운로드</a>
+              <a class="nav-link" href="main_page_sub/download.html">다운로드</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">로그인</a>

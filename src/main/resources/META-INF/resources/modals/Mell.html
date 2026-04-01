@@ -1,67 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>Mell Info</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    body { background-color: #0a0e17; color: #fff; font-family: sans-serif; padding: 20px; margin: 0; }
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
-    .skill-icon { width: 45px; height: 45px; background-color: #1e1e1e; border: 2px solid #a020f0; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: bold; margin-right: 15px; flex-shrink: 0; }
-    .skill-row { display: flex; margin-bottom: 20px; }
-    .skill-desc h5 { color: #a020f0; margin-bottom: 5px; font-size: 1.1rem; }
-    .skill-desc p { color: #ccc; font-size: 0.95rem; margin-bottom: 0; line-height: 1.4; }
-    .lore { font-style: italic; color: #aaa; margin-bottom: 30px; border-left: 4px solid #ff0000; padding-left: 15px; }
-  </style>
-</head>
-<body>
-  <h2 class="mb-3">멜 (Mell) <span class="fs-5 text-secondary">- 메다르다의 후계자</span></h2>
-  <div class="lore">
-    "녹서스의 강력한 메다르다 가문의 후계자. 엄청난 정치적 수완은 물론, 새롭게 각성한 마법의 힘으로 전장을 통제합니다."
-  </div>
-  
-  <div class="mb-4 d-flex">
-    <span class="badge bg-primary fs-6 me-2">마법사</span>
-    <span class="badge bg-secondary fs-6">난이도: 상</span>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mell Info</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #0a0e17;
+        color: #fff;
+        font-family: sans-serif;
+        padding: 20px;
+        margin: 0;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      .skill-icon {
+        width: 45px;
+        height: 45px;
+        background-color: #1e1e1e;
+        border: 2px solid #a020f0;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-right: 15px;
+        flex-shrink: 0;
+      }
+      .skill-row {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      .skill-desc h5 {
+        color: #a020f0;
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+      }
+      .skill-desc p {
+        color: #ccc;
+        font-size: 0.95rem;
+        margin-bottom: 0;
+        line-height: 1.4;
+      }
+      .lore {
+        font-style: italic;
+        color: #aaa;
+        margin-bottom: 30px;
+        border-left: 4px solid #ff0000;
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="mb-3">
+      멜 (Mell) <span class="fs-5 text-secondary">- 메다르다의 후계자</span>
+    </h2>
+    <div class="lore">
+      "녹서스의 강력한 메다르다 가문의 후계자. 엄청난 정치적 수완은 물론, 새롭게
+      각성한 마법의 힘으로 전장을 통제합니다."
+    </div>
 
-  <h4 class="mb-3 border-bottom border-secondary pb-2">스킬 정보</h4>
-  
-  <div class="skill-row">
-    <div class="skill-icon">P</div>
-    <div class="skill-desc">
-      <h5>압도 (Overwhelm)</h5>
-      <p>스킬 사용 후 공격 시 보너스 발사체를 날리며, 강력한 스택을 축적하여 낮은 체력의 적을 단숨에 처형합니다.</p>
+    <div class="mb-4 d-flex">
+      <span class="badge bg-primary fs-6 me-2">마법사</span>
+      <span class="badge bg-secondary fs-6">난이도: 상</span>
     </div>
-  </div>
-  <div class="skill-row">
-    <div class="skill-icon">Q</div>
-    <div class="skill-desc">
-      <h5>불타는 광휘 (Searing Brilliance)</h5>
-      <p>지정한 방향으로 치명적인 빛의 에너지를 발사해 경로상의 모든 적에게 큰 마법 피해를 입힙니다.</p>
+
+    <h4 class="mb-3 border-bottom border-secondary pb-2">스킬 정보</h4>
+
+    <div class="skill-row">
+      <div class="skill-icon">P</div>
+      <div class="skill-desc">
+        <h5>압도 (Overwhelm)</h5>
+        <p>
+          스킬 사용 후 공격 시 보너스 발사체를 날리며, 강력한 스택을 축적하여
+          낮은 체력의 적을 단숨에 처형합니다.
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="skill-row">
-    <div class="skill-icon">W</div>
-    <div class="skill-desc">
-      <h5>반박 (Rebuttal)</h5>
-      <p>황금빛 장막을 펼쳐 들어오는 투사체를 반사 및 무효화시키고 순간적인 이동 속도를 얻습니다.</p>
+    <div class="skill-row">
+      <div class="skill-icon">Q</div>
+      <div class="skill-desc">
+        <h5>불타는 광휘 (Searing Brilliance)</h5>
+        <p>
+          지정한 방향으로 치명적인 빛의 에너지를 발사해 경로상의 모든 적에게 큰
+          마법 피해를 입힙니다.
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="skill-row">
-    <div class="skill-icon">E</div>
-    <div class="skill-desc">
-      <h5>태양의 속박 (Solar Snare)</h5>
-      <p>찬란한 빛 에너지를 방출해 적중한 적들을 제자리에 묶고 지속 피해를 입힙니다.</p>
+    <div class="skill-row">
+      <div class="skill-icon">W</div>
+      <div class="skill-desc">
+        <h5>반박 (Rebuttal)</h5>
+        <p>
+          황금빛 장막을 펼쳐 들어오는 투사체를 반사 및 무효화시키고 순간적인
+          이동 속도를 얻습니다.
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="skill-row">
-    <div class="skill-icon">R</div>
-    <div class="skill-desc">
-      <h5>황금빛 일식 (Golden Eclipse)</h5>
-      <p>전장 일대를 찬란한 빛으로 뒤덮는 궁극기를 전개하여 막강한 광역 파괴 광선을 내리꽂습니다.</p>
+    <div class="skill-row">
+      <div class="skill-icon">E</div>
+      <div class="skill-desc">
+        <h5>태양의 속박 (Solar Snare)</h5>
+        <p>
+          찬란한 빛 에너지를 방출해 적중한 적들을 제자리에 묶고 지속 피해를
+          입힙니다.
+        </p>
+      </div>
     </div>
-  </div>
-</body>
+    <div class="skill-row">
+      <div class="skill-icon">R</div>
+      <div class="skill-desc">
+        <h5>황금빛 일식 (Golden Eclipse)</h5>
+        <p>
+          전장 일대를 찬란한 빛으로 뒤덮는 궁극기를 전개하여 막강한 광역 파괴
+          광선을 내리꽂습니다.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
